@@ -232,7 +232,6 @@
     margin: 2px 2px 0 10px;
     max-width: 300px;
     width: 300px;
-    min-height: 50px;
     background: #008dbcb3;
     outline: none;
     color: white;
@@ -364,11 +363,22 @@
 .i-tilepanel .i-tileview-size-600 .thumb-wrap { width: 606px;}
 .i-tilepanel .i-tileview-size-650 .thumb-wrap { width: 656px;}
 .i-tilepanel .i-tileview-size-700 .thumb-wrap { width: 706px;}
-.i-tilepanel .thumb{
+.i-tilepanel .thumb {
     background: #dddddd;
     padding: 3px;
     position: relative;
     width: 100%;
+}
+.i-tilepanel .thumb a[data-fslightbox-holder] {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: none;
+}
+.i-tilepanel .x-item-selected .thumb a[data-fslightbox-holder] {
+    display: block;
+    cursor: pointer;
 }
 .i-tilepanel .thumb-image{
     background: #008dbc;
@@ -594,4 +604,22 @@
 }
 .i-uieditor.i-uieditor-tooltip .x-form-textarea {
     line-height: 13px;
+}
+
+.i-color-color-box-wrap {
+    width: 13px;
+    display: table-cell;
+}
+.i-color-color-box {
+    width: 13px;
+    height: 9px;
+    background: white;
+    display: block;
+    margin-left: 3px;
+    outline: 1px dotted gray;
+    margin-right: 1px;
+}
+font[color][title] {
+    border-bottom: 1px dotted;
+    cursor: pointer;
 }
