@@ -144,8 +144,6 @@ Ext.define("Ext.locale.en.picker.Date", {
     todayTip: "{0} (Spacebar)",
     format: "m/d/y",
     startDay: 0
-}, function(){
-	console.log('defined', arguments[0].prototype.maxText);
 });
 
 Ext.define("Ext.locale.en.picker.Month", {
@@ -429,4 +427,3 @@ Ext.define("Ext.locale.en.view.MultiSelector", {
 Ext.define("Ext.locale.en.Component", {
     override: "Ext.Component"
 });
-console.log('hello', Ext.locale);
