@@ -612,9 +612,11 @@ a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_b
     min-height: 21px;
 }
 .x-grid-cell-inner > img {
-    padding-top: 4px !important;
+    padding-top: 3px !important;
 }
-
+.i-no-ellipsis .x-grid-cell-inner {
+    text-overflow: unset;
+}
 /* Datepicker */
 .x-datepicker-column-header-inner {
     color: white;

@@ -28,7 +28,17 @@
 .x-boundlist-item-over{
 }
 .x-boundlist-item .i-combo-color-box {width: 14px; height: 9px;}
-.x-boundlist-item .i-combo-color-box[style*="background: url"] {width: 16px; height: 16px; vertical-align: sub;}
+.x-grid-cell-inner .i-color-box[style*="background: url"] {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+.x-boundlist-item .i-combo-color-box[style*="background: url"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: sub;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
 
 .x-boundlist-item-group, .x-boundlist-item-group.x-boundlist-item-disabled {
     background-color: #2582ac;
@@ -62,7 +72,7 @@
 
 /* Combo color box */
 .i-combo .i-combo-color-box {width: 14px; height: 9px;}
-.i-combo .i-combo-color-box[style*="background: url"] {width: 16px; height: 15px; margin-bottom: -3px !important;}
+.i-combo .i-combo-color-box[style*="background: url"] {width: 16px; height: 15px; margin-bottom: -3px !important; background-size: contain !important; background-repeat: no-repeat !important;}
 
 /* Combo multiple selected items*/
 .i-combo .i-combo-multiple .i-combo-selected-item {
