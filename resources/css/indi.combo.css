@@ -614,7 +614,7 @@ a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_b
 .x-grid-cell-inner > img {
     padding-top: 3px !important;
 }
-.i-no-ellipsis .x-grid-cell-inner {
+.i-header-icon .x-grid-cell-inner {
     text-overflow: unset;
 }
 /* Datepicker */

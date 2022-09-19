@@ -633,3 +633,21 @@ font[color][title] {
     border-bottom: 1px dotted;
     cursor: pointer;
 }
+.x-grid-cell[class*="-column-colorEntry"] .x-grid-cell-inner {
+    text-overflow: unset;
+    padding-left: 8px;
+    top: 1px;
+}
+
+.x-grid-cell.i-header-icon.i-element-color .i-color-box{
+    margin-left: 2px;
+    top: 2px;
+    margin-right: 8px;
+}
+.x-grid-cell.i-overflow:hover .x-grid-cell-inner .i-color-box {
+    margin-right: 5px;
+    margin-left: 0px
+}
+.x-grid-cell.i-element-color .x-grid-cell-inner {
+    text-overflow: unset;
+}
