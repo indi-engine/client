@@ -623,7 +623,7 @@
 .i-color-color-box {
     width: 13px;
     height: 9px;
-    background: white;
+    background: white;                                                                                                                  {}
     display: block;
     margin-left: 3px;
     outline: 1px dotted gray;
@@ -650,4 +650,7 @@ font[color][title] {
 }
 .x-grid-cell.i-element-color .x-grid-cell-inner {
     text-overflow: unset;
+}
+.i-column-header-icon .x-column-header-over .x-column-header-trigger {
+    opacity: 0;
 }
