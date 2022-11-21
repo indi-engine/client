@@ -1,10 +1,4 @@
 {
     "name": "indi-engine/client",
-    "description": "Client app for Indi Engine",
-    "repositories": [
-       {"type": "git", "url": "https://github.com/indi-engine/stompjs.git"} 
-    ],
-    "require": {
-        "indi-engine/stompjs": "dev-master"
-    }
+    "description": "Client app for Indi Engine"
 }
