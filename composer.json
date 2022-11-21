@@ -2,20 +2,9 @@
     "name": "indi-engine/client",
     "description": "Client app for Indi Engine",
     "repositories": [
-      {
-        "type": "package",
-        "package": {
-          "name": "stomp-js/stompjs",
-          "version": "6.1.2",
-          "source": {
-            "type": "git",
-            "reference": "origin/master",
-            "url": "https://github.com/stomp-js/stompjs.git"
-          }
-        }
-      }
+       {"type": "git", "url": "https://github.com/indi-engine/stompjs.git"} 
     ],
     "require": {
-        "stomp-js/stompjs": "6.1.2"
+        "indi-engine/stompjs": "dev-master"
     }
 }
