@@ -654,3 +654,46 @@ font[color][title] {
 .i-column-header-icon .x-column-header-over .x-column-header-trigger {
     opacity: 0;
 }
+[id$="-toolbar--filter"] {
+    border-bottom-width: 1px !important;
+    border-right: 0;
+    border-left: 0;
+}
+[id$="-toolbar--master"] {
+    border-top-width: 0 !important;
+}
+.i-filterwin [id$="-toolbar--filter"] {
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 0;
+}
+.i-notice-btn {
+    top: 4px !important;
+}
+.i-notice-btn.x-btn-pressed {
+    height: 22px;
+    border-bottom-width: 0;
+}
+.x-btn.i-notice-btn.x-btn-pressed .x-btn-inner-default-toolbar-small {
+    position: relative;
+    top: -2.5px;
+}
+.i-notice-btn.x-btn-disabled {
+    pointer-events: all;
+}
+.x-btn.i-notice-btn .x-btn-inner-default-toolbar-small {
+    color: inherit;
+    line-height: 11px;
+}
+.x-btn.i-notice-btn.x-btn-pressed:after {
+    top: 16px;
+    left: 20%;
+    position: absolute;
+    height: 2px;
+    width: 60%;
+    background: white;
+    content: ' ';
+}
+.x-keyboard-mode .i-notice-btn.x-btn-focus.x-btn-default-toolbar-small {
+    box-shadow: none;
+}
