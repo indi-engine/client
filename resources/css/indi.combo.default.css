@@ -697,3 +697,29 @@ font[color][title] {
 .x-keyboard-mode .i-notice-btn.x-btn-focus.x-btn-default-toolbar-small {
     box-shadow: none;
 }
+.i-realtime-indicator {
+    width: 7px;
+    display: inline-block;
+    height: 7px;
+    margin-bottom: -5px;
+    background: white;
+    margin-left: 5px;
+    box-sizing: content-box;
+    border-bottom: 6px solid;
+}
+.i-realtime-indicator.running,
+.i-realtime-indicator.running {
+    background: lime;
+}
+.x-btn .i-realtime-indicator {
+    border-bottom-color: #35baf6;
+}
+.x-btn-over .i-realtime-indicator {
+    border-bottom-color: #31abe2;
+}
+.x-btn-focus.x-btn-over, .x-btn-focus.x-btn-pressed {
+    box-shadow: none !important;
+}
+.x-btn-pressed .i-realtime-indicator {
+    border-bottom-color: #288cb9;
+}
