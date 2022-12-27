@@ -717,7 +717,7 @@ font[color][title] {
 .x-btn-over .i-realtime-indicator {
     border-bottom-color: #31abe2;
 }
-.x-btn-focus.x-btn-over, .x-btn-focus.x-btn-pressed {
+.x-btn-focus, .x-btn-focus.x-btn-over, .x-btn-focus.x-btn-pressed {
     box-shadow: none !important;
 }
 .x-btn-pressed .i-realtime-indicator {
