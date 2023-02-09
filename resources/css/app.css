@@ -1450,3 +1450,6 @@ font[color][title] {
 .x-btn-pressed .i-led {
     border-bottom-color: #288cb9;
 }
+.x-boundlist-item-hidden {
+    display: none;
+}
