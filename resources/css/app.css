@@ -1453,3 +1453,42 @@ font[color][title] {
 .x-boundlist-item-hidden {
     display: none;
 }
+.x-grid-cell .i-cell-img {
+    width: 16px;
+}
+.x-keyboard-mode .x-grid-item-focused {
+    color: inherit;
+}
+
+/* Grid chunks specific styles */
+.i-grid-chunk .x-grid-item-selected,
+.i-grid-chunk .x-grid-item-over {
+    background: inherit;
+}
+.i-grid-chunk .x-grid-scroll-body.x-scroller {
+    height: 21px !important;
+}
+.x-keyboard-mode .x-grid-item-focused {
+    color: inherit;
+}
+.i-grid-chunk .x-grid-cell-inner {
+    text-overflow: initial;
+}
+.i-grid-chunk .i-level-1 > .x-column-header-inner {
+    background: #ddffe0;
+}
+.i-grid-chunk .i-level-1 > .x-box-inner {
+    background: white;
+}
+.i-grid-chunk {
+    border-top: 1px solid #c0cdf8;
+}
+.i-grid-chunk .i-level-1:first-child > .x-column-header-inner {
+    border-left: 1px solid #c0cdf8;
+}
+.i-grid-chunk .i-level-1:last-child > .x-column-header-inner {
+    border-right: 1px solid #c0cdf8;
+}
+.i-grid-chunk .x-column-header-over {
+    background-color: inherit;
+}
