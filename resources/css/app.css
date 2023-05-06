@@ -1130,6 +1130,7 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
 .i-tilepanel .thumb img{
     display: block;
     width: inherit;
+    background: white;
 }
 .i-tilepanel .thumb .thumb-holder{
     font-size: 20px;
@@ -1151,7 +1152,8 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
     margin: 5px;
     margin-right: 0;
     margin-bottom: 0;
-    padding: 5px;
+    padding: 4px;
+    border: 1px solid transparent;
 }
 .i-tilepanel .thumb-wrap span.x-editable {
     text-overflow: ellipsis;
@@ -1169,7 +1171,6 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
 .i-tilepanel .x-item-over{
     border:1px solid #dddddd;
     background: #efefef;
-    padding: 4px;
 }
 
 .i-tilepanel .x-item-selected{
@@ -1195,8 +1196,26 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
     background: rgba(135, 135, 135, 0.4);
     color: white;
     padding: 0 6px 0;
+}
+.i-tilepanel .thumb-wrap .thumb-panel.thumb-panel-top-right {
     right: 3px;
     top: 3px;
+}
+.i-tilepanel .thumb-wrap .thumb-panel-id {
+    left: 3px;
+    bottom: 3px;
+    display: none;
+}
+.i-tilepanel .i-showID .thumb-wrap .thumb-panel-id {
+    display: block;
+}
+.i-tilepanel .thumb-wrap .thumb-panel-rn {
+    right: 3px;
+    bottom: 3px;
+    display: none;
+}
+.i-tilepanel .i-showRN .thumb-wrap .thumb-panel-rn {
+    display: block;
 }
 .i-tilepanel .thumb-wrap .thumb-panel a {
     color: white;
@@ -1350,11 +1369,11 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
 .i-color-color-box {
     width: 13px;
     height: 9px;
-    background: white;                                                                                                                  {}
-display: block;
-margin-left: 3px;
-outline: 1px dotted gray;
-margin-right: 1px;
+    background: white;
+    display: block;
+    margin-left: 3px;
+    outline: 1px dotted gray;
+    margin-right: 1px;
 }
 font[color][title] {
     border-bottom: 1px dotted;
@@ -1491,4 +1510,9 @@ font[color][title] {
 }
 .i-grid-chunk .x-column-header-over {
     background-color: inherit;
+}
+.i-tilepanel .thumb {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: transparent;
 }

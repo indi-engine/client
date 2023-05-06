@@ -871,9 +871,7 @@ td.ext-cal-dtitle-today div {
     padding-right: 5px;
 }
 
-.ext-cal-day-col .ext-major-0 {
-    background: rgba(239, 253, 255, 0.5);
-    border-color: #71BDE5;
+.ext-cal-day-col .ext-plan-item {
     border-radius: 0;
     border-style: dotted;
 }
@@ -952,4 +950,49 @@ td.ext-cal-dtitle-today div {
 .ext-cal-dayview .ext-cal-body-ct .ext-cal-bg-tbl tbody {
     position: absolute;
     width: 100%;
+}
+.ext-cal-mdv {
+    max-height: 500px;
+    overflow: auto;
+}
+.ext-plan-item,
+.ext-plan-item-x,
+.ext-plan-item-ad {
+    --border-color: #71BDE5;
+    --background-color: rgba(239,253,255,0.5);
+    --background-color-selected: rgba(102, 236, 255, 0.6);
+}
+
+.ext-plan-item.ext-cal-evt.ext-cal-evr,
+.ext-plan-item,
+.ext-plan-item-ad,
+.x-ie .ext-plan-item-ad,
+.x-opera .ext-plan-item-ad {
+    color: var(--color);
+}
+.ext-cal-day-col .ext-plan-item,
+.x-dd-drag-proxy .ext-plan-item,
+.ext-plan-item-ad,
+.ext-plan-item-ad .ext-cal-evm,
+.ext-plan-item .ext-cal-picker-icon,
+.ext-plan-item-x dl,
+.ext-plan-item-x .ext-cal-evb {
+    background: var(--background-color);
+}
+.ext-plan-item-ad.ext-evt-selected,
+.ext-cal-day-col .ext-plan-item.ext-evt-selected,
+.x-dd-drag-proxy .ext-plan-item.ext-evt-selected {
+    background: var(--background-color-selected);
+}
+.ext-plan-item-x .ext-cal-evb,
+.ext-plan-item-ad .ext-cal-evm,
+.ext-plan-item-ad,
+.ext-plan-item-x dl,
+.ext-plan-item.ext-cal-evt.ext-cal-evr {
+    border-width: 1px;
+    border-style: dotted;
+    border-color: var(--border-color);
+}
+.ext-plan-item .ext-evt-rsz-h {
+    border-color: var(--border-color);
 }
