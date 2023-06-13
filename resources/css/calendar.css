@@ -641,8 +641,11 @@ td.ext-cal-dtitle-today div {
 .ext-evt-over,
 /* IE/Opera: */
 .ext-evt-over .ext-cal-evm {
-    opacity: .8;
-    filter: alpha(opacity=80);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    z-index: 1;
+    width: calc(100% - var(--left)) !important;
+    background: var(--background-color-hover) !important;
 }
 
 /* Calendar Picker */
@@ -826,34 +829,6 @@ td.ext-cal-dtitle-today div {
 
 /*******************************************
  * 
- * Calendar form styles
- *
- ******************************************/
-.x-gecko .ext-cal-event-win .x-window-body .x-form-item {
-    overflow: hidden;
-}
-.ext-evt-edit-form .x-form-item {
-    margin-bottom: 8px;
-}
-.ext-evt-edit-form .x-panel-bbar .x-toolbar {
-    border-bottom: 1px solid #99BBE8;
-}
-.ext-evt-edit-form .x-panel-header {
-    background: transparent url(../images/default/ext-cal-edit-hd.png) repeat-x;
-    padding: 9px 0 4px !important;
-    font-size: 13px !important;
-    font-family: helvetica, arial, sans-serif;
-    border-top: 0;
-    border-bottom: 1px solid #BBCCFF;
-}
-.ext-evt-edit-form .x-panel-fbar {
-    padding: 5px 10px;
-    background: #DFE8F6;
-    border: 1px solid #BBCCFF;
-}
-
-/*******************************************
- * 
  * DateRangeField styles
  *
  ******************************************/
@@ -969,6 +944,8 @@ td.ext-cal-dtitle-today div {
 .x-ie .ext-plan-item-ad,
 .x-opera .ext-plan-item-ad {
     color: var(--color);
+    width: var(--width);
+    left: var(--left);
 }
 .ext-cal-day-col .ext-plan-item,
 .x-dd-drag-proxy .ext-plan-item,
@@ -982,7 +959,7 @@ td.ext-cal-dtitle-today div {
 .ext-plan-item-ad.ext-evt-selected,
 .ext-cal-day-col .ext-plan-item.ext-evt-selected,
 .x-dd-drag-proxy .ext-plan-item.ext-evt-selected {
-    background: var(--background-color-selected);
+    background: var(--background-color-selected) !important;
 }
 .ext-plan-item-x .ext-cal-evb,
 .ext-plan-item-ad .ext-cal-evm,

@@ -127,6 +127,10 @@
 .i-field > * {
     padding: 1px 0 !important;
 }
+.i-field.i-print-iframe > iframe {
+    display: block;
+    padding: 0 !important;
+}
 .x-form-layout-wrap {
     border-spacing: 0;
 }
@@ -549,6 +553,8 @@ a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_b
     height: 13px;
     top: 2px;
     margin-top: -2px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
 }
 
 /* Menu items*/
@@ -758,6 +764,7 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
 .x-grid-cell-inner .i-color-box[style*="background: url"] {
     background-size: contain !important;
     background-repeat: no-repeat !important;
+    margin-left: 1px !important;
 }
 .x-boundlist-item .i-combo-color-box[style*="background: url"] {
     width: 16px;
@@ -965,7 +972,7 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
     line-height: normal;
     font-size: 12px;
 }
-.i-notice {
+.i-notice, .i-notice-hideall {
     margin: 2px 2px 0 10px;
     max-width: 300px;
     width: 300px;
@@ -1087,19 +1094,13 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
 .i-tilepanel .thumb-wrap {
     box-sizing: content-box;
 }
-.i-tilepanel .i-tileview-size-100 .thumb-wrap { width: 106px;}
-.i-tilepanel .thumb-wrap, .i-tilepanel .i-tileview-size-150 .thumb-wrap { width: 156px;}
-.i-tilepanel .i-tileview-size-200 .thumb-wrap { width: 206px;}
-.i-tilepanel .i-tileview-size-250 .thumb-wrap { width: 256px;}
-.i-tilepanel .i-tileview-size-300 .thumb-wrap { width: 306px;}
-.i-tilepanel .i-tileview-size-350 .thumb-wrap { width: 356px;}
-.i-tilepanel .i-tileview-size-400 .thumb-wrap { width: 406px;}
-.i-tilepanel .i-tileview-size-450 .thumb-wrap { width: 456px;}
-.i-tilepanel .i-tileview-size-500 .thumb-wrap { width: 556px;}
-.i-tilepanel .i-tileview-size-550 .thumb-wrap { width: 556px;}
-.i-tilepanel .i-tileview-size-600 .thumb-wrap { width: 606px;}
-.i-tilepanel .i-tileview-size-650 .thumb-wrap { width: 656px;}
-.i-tilepanel .i-tileview-size-700 .thumb-wrap { width: 706px;}
+.i-tilepanel .thumb-wrap {
+    width: calc(var(--tileview-size) - -6px);
+}
+.i-tilepanel .thumb-wrap > .thumb > img {
+    width: var(--tileview-size);
+    height: calc(var(--tileview-size) / var(--tileview-ratio));
+}
 .i-tilepanel .thumb {
     background: #dddddd;
     padding: 3px;
@@ -1123,13 +1124,12 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
 .i-tilepanel .thumb-nofile{
 
 }
-.i-tilepanel .thumb-nofile img{
+.i-tilepanel .thumb-nofile > img {
     background: #ffffff;
 }
 
-.i-tilepanel .thumb img{
+.i-tilepanel .thumb > img{
     display: block;
-    width: inherit;
     background: white;
 }
 .i-tilepanel .thumb .thumb-holder{
@@ -1155,7 +1155,7 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
     padding: 4px;
     border: 1px solid transparent;
 }
-.i-tilepanel .thumb-wrap span.x-editable {
+.i-tilepanel .thumb-wrap .thumb-bottom-lines > span {
     text-overflow: ellipsis;
     max-height: 20px;
     transition: text-indent 4s ease 0s;
@@ -1188,7 +1188,7 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
     margin-left: 6px;
     margin-right: 0;
 }
-.i-tilepanel .thumb-wrap .thumb-nofile span.i-color-box {
+.i-tilepanel .thumb-wrap .thumb-nofile .thumb-panel-top-right span.i-color-box {
     margin-left: 0;
 }
 .i-tilepanel .thumb-wrap .thumb-panel {
@@ -1222,7 +1222,7 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
     text-decoration: none;
     line-height: 15px;
 }
-.i-tilepanel .thumb-wrap .thumb-bottom {
+.i-tilepanel .thumb-wrap .thumb-bottom-lines {
     /*position: absolute;
     bottom: 3px;
     left: 3px;
@@ -1515,4 +1515,103 @@ font[color][title] {
     outline-width: 2px;
     outline-style: solid;
     outline-color: transparent;
+}
+
+.i-panel-btn {
+    top: 4px !important;
+    height: 22px;
+    border-bottom-width: 0;
+    position: relative;
+    border-color: transparent;
+    background: transparent;
+}
+.i-panel-btn.x-btn-pressed {
+    border-color: #d2d2d2;
+}
+.x-btn.i-panel-btn.x-btn-pressed .x-btn-inner-default-toolbar-small {
+    top: -2.5px;
+}
+.i-panel-btn.x-btn-disabled {
+    pointer-events: all;
+}
+.i-panel-btn .x-btn-icon-el {
+    margin-top: -1px;
+}
+.x-btn.i-panel-btn .x-btn-inner-default-toolbar-small {
+    color: inherit;
+    line-height: 11px;
+}
+.x-keyboard-mode .i-panel-btn.x-btn-focus.x-btn-default-toolbar-small {
+    box-shadow: none;
+}
+.x-btn.i-panel-btn.x-btn-pressed.x-btn-default-toolbar-small {
+    background: white;
+}
+.x-window-text {
+    margin-bottom: 5px;
+}
+.x-column-header.i-column-further {
+    background: #e2e2e2;
+}
+.x-grid-cell.i-column-further {
+    background: #e2e2e25c;
+}
+.i-grid-column-color-box .x-grid-cell-inner .i-color-box {
+    margin-left: 2px;
+}
+.i-column-header-icon .x-grid-cell-inner br {
+    display: contents;
+}
+.i-column-header-icon.i-overflow:hover .x-grid-cell-inner br {
+    display: block;
+}
+.i-notice-hideall {
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+.i-notice + .i-notice + .i-notice-hideall {
+    display: block;
+    position: absolute;
+    top: -24px;
+}
+.ext-plan-item.ext-cal-evt.ext-cal-evr,
+.ext-plan-item-ad.ext-cal-evt.ext-cal-evr {
+    transition: text-indent 4s ease 0s;
+}
+
+[data-field] > [data-label]:after {
+    content: ': ';
+}
+.i-tilepanel .thumb-wrap .thumb-panel-right {
+    display: block;
+    right: 3px;
+    top: 23px;
+    padding: 0 6px 0 0;
+}
+.thumb-panel.thumb-panel-right > [data-field] {
+    display: block;
+}
+.thumb-panel.thumb-panel-right > [data-field] > [data-label] {
+    display: none;
+}
+[data-value] > .i-cell-img {
+    margin-left: 4px;
+    position: relative;
+    left: 1px;
+    top: 3px;
+}
+.i-tilepanel .thumb-wrap .thumb-nofile .thumb-panel-top-right,
+.i-tilepanel .thumb-wrap .thumb-nofile .thumb-panel-right {
+    background-color: rgba(135, 135, 135, 0.2);
+}
+.i-tilepanel .thumb-wrap .thumb-bottom-boxes {
+    text-align: center;
+}
+.i-tilepanel .thumb-wrap .thumb-bottom-boxes [data-field] {
+    height: 16px;
+    display: inline-block;
+}
+.i-grid-column-color-box .x-grid-cell-inner {
+    text-overflow: unset;
 }
