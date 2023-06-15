@@ -1595,6 +1595,9 @@ font[color][title] {
 .thumb-panel.thumb-panel-right > [data-field] > [data-label] {
     display: none;
 }
+[data-value] {
+    white-space: pre;
+}
 [data-value] > .i-cell-img {
     margin-left: 4px;
     position: relative;
