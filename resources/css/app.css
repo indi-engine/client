@@ -1618,3 +1618,9 @@ font[color][title] {
 .i-grid-column-color-box .x-grid-cell-inner {
     text-overflow: unset;
 }
+.i-header-icon .x-grid-cell-inner br {
+    display: none;
+}
+.i-header-icon.i-overflow .x-grid-cell-inner br {
+    display: block;
+}
