@@ -301,8 +301,9 @@
     border-right-width: 0;
     border-left-width: 0;
 }
-[data-ref="bodyWrap"] > .x-toolbar[aria-hidden="false"] + .x-toolbar[aria-hidden="true"] + .x-toolbar {
-    border-top-width: 1px;
+[data-ref="bodyWrap"] > .x-toolbar[aria-hidden="false"] + .x-toolbar[aria-hidden="true"] + .x-toolbar,
+[data-ref="bodyWrap"] > .x-toolbar[aria-hidden="false"] + .x-toolbar[aria-hidden="false"] {
+    border-top-width: 0.1px !important;
 }
 .i-icon-btn.x-btn-disabled.x-btn-default-toolbar-small {
     background: transparent;
@@ -1623,4 +1624,7 @@ font[color][title] {
 }
 .i-header-icon.i-overflow .x-grid-cell-inner br {
     display: block;
+}
+.x-field.x-form-type-text[id*="-toolbar--filter--"] {
+    min-height: 18.9px;
 }
