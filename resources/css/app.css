@@ -1628,3 +1628,6 @@ font[color][title] {
 .x-field.x-form-type-text[id*="-toolbar--filter--"] {
     min-height: 18.9px;
 }
+[id*=-row-gridChunk-] .x-column-header.i-level-1 > .x-column-header-inner {
+    padding-top: 4px;
+}
