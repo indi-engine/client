@@ -1631,3 +1631,6 @@ font[color][title] {
 [id*=-row-gridChunk-] .x-column-header.i-level-1 > .x-column-header-inner {
     padding-top: 4px;
 }
+.i-grid-chunk .i-element-textarea .x-grid-cell-inner {
+    text-overflow: ellipsis;
+}
