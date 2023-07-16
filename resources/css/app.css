@@ -10,6 +10,9 @@
 .x-panel .i-combo .i-combo-keyword{border: 0; background: transparent;}
 
 /* Combo options data */
+.x-boundlist {
+    --option-height: 14px;
+}
 .x-boundlist-item {
     border-right: 0;
     border-left: 0;
@@ -18,13 +21,14 @@
     word-break: break-all;
     vertical-align: top;
     overflow: hidden;
+    height: var(--option-height);
 }
 .x-boundlist-item .i-color-box[style*="background: url"] {
     vertical-align: text-bottom;
 }
 .x-boundlist-item .i-combo-color-box {display: inline-block;}
 .x-boundlist-item:last-child {
-    border-bottom: none;
+    border-bottom-color: transparent;
 }
 .x-boundlist-item[timeId] {
     display: inline-block;
@@ -768,11 +772,14 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
     margin-left: 1px !important;
 }
 .x-boundlist-item .i-combo-color-box[style*="background: url"] {
-    width: 16px;
-    height: 16px;
-    vertical-align: sub;
+    width: 15px;
+    height: 15px;
+    vertical-align: top;
     background-size: contain !important;
     background-repeat: no-repeat !important;
+    position: relative;
+    top: -1px;
+    margin-left: -1px;
 }
 
 .x-boundlist-item-group, .x-boundlist-item-group.x-boundlist-item-disabled {
@@ -1633,4 +1640,18 @@ font[color][title] {
 }
 .i-grid-chunk .i-element-textarea .x-grid-cell-inner {
     text-overflow: ellipsis;
+}
+.x-textmetrics,
+.x-grid-cell.i-grid-column-tree .x-grid-cell-inner,
+.x-grid-cell.i-overflow:hover .x-grid-cell-inner {
+    white-space: pre;
+}
+.i-window-header.x-toolbar-default .x-tool-img {
+    background-image: url(../images/tools/tool-sprites.png);
+}
+span.i-color-box[jump^="cell:"]{
+    margin-right: 0 !important;
+}
+.x-grid-cell-inner .i-color-box[style*="background: url"][jump^="cell:defaultSortDirection"] {
+    margin-left: -2px !important;
 }
