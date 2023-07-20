@@ -1655,3 +1655,6 @@ span.i-color-box[jump^="cell:"]{
 .x-grid-cell-inner .i-color-box[style*="background: url"][jump^="cell:defaultSortDirection"] {
     margin-left: -2px !important;
 }
+.i-grid-column-rtl{
+    direction: rtl;
+}
