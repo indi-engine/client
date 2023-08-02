@@ -1658,3 +1658,21 @@ span.i-color-box[jump^="cell:"]{
 .i-grid-column-rtl{
     direction: rtl;
 }
+.x-mask-msg.i-mask-record-deleted {
+    position: relative;
+    display: inline-block;
+    top: 47% !important;
+    left: unset !important;
+}
+.x-mask-msg.i-mask-record-deleted  .x-mask-msg-text {
+    padding: 0;
+    background-image: none;
+}
+.i-record-deleted[id^="desktopwindow-"] > .x-window-bodyWrap > .x-window-body >
+.x-autocontainer-outerCt > .x-autocontainer-innerCt > .x-panel.x-masked > .x-mask {
+    background: none;
+    text-align: center;
+}
+.i-record-deleted {
+    filter: grayscale(1)
+}
