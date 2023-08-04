@@ -1676,3 +1676,18 @@ span.i-color-box[jump^="cell:"]{
 .i-record-deleted {
     filter: grayscale(1)
 }
+.x-tab-default .x-tab-close-btn {
+    top: 3px;
+    right: 3px;
+    width: 13px;
+    height: 13px;
+    background: url(../images/icons/btn-icon-close.png) 0 0!important;
+    background-size: contain!important;
+    filter: brightness(4.5);
+}
+.x-tab-default.x-tab-active .x-tab-close-btn {
+    filter: none;
+}
+.x-tab-closable.x-tab-default .x-tab-button {
+    padding-right: 10px;
+}
