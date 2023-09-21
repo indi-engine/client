@@ -1230,6 +1230,9 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
     text-decoration: none;
     line-height: 15px;
 }
+.i-tilepanel .thumb-wrap .thumb-bottom-lines span[data-value] .i-cell-img {
+    display: none;
+}
 .i-tilepanel .thumb-wrap .thumb-bottom-lines {
     /*position: absolute;
     bottom: 3px;
