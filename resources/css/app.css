@@ -1709,3 +1709,6 @@ span.i-color-box[jump^="cell:"]{
 .x-tab-closable.x-tab-default .x-tab-button {
     padding-right: 10px;
 }
+.x-form-field-date .x-form-date-trigger {
+    background: url(../images/icons/plan-day.png) no-repeat center !important;
+}
