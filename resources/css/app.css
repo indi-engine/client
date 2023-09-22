@@ -1233,6 +1233,21 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
 .i-tilepanel .thumb-wrap .thumb-bottom-lines span[data-value] .i-cell-img {
     display: none;
 }
+.x-grid-rowbody span[data-field] {
+    margin-top: -1px;
+    display: inline-block;
+}
+.x-grid-rowbody span[data-field]:first-child {
+    margin-top: 1px;
+    display: inline-block;
+}
+.x-grid-rowbody span[data-label] {
+    background: #efefef;
+    padding: 2px 5px;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid #d0d0d0;
+}
 .i-tilepanel .thumb-wrap .thumb-bottom-lines {
     /*position: absolute;
     bottom: 3px;
