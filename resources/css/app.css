@@ -1712,3 +1712,6 @@ span.i-color-box[jump^="cell:"]{
 .x-form-field-date .x-form-date-trigger {
     background: url(../images/icons/plan-day.png) no-repeat center !important;
 }
+.x-grid-cell.i-element-number[style*="width: 30px"] .x-grid-cell-inner {
+    text-overflow: unset;
+}
