@@ -305,9 +305,11 @@
     border-right-width: 0;
     border-left-width: 0;
 }
-[data-ref="bodyWrap"] > .x-toolbar[aria-hidden="false"] + .x-toolbar[aria-hidden="true"] + .x-toolbar,
-[data-ref="bodyWrap"] > .x-toolbar[aria-hidden="false"] + .x-toolbar[aria-hidden="false"] {
+[data-ref="bodyWrap"] > .x-toolbar[aria-hidden="false"] + .x-toolbar[aria-hidden="true"] + .x-toolbar {
     border-top-width: 0.1px !important;
+}
+[data-ref="bodyWrap"] > .x-toolbar[aria-hidden="false"] + .x-toolbar[aria-hidden="false"] {
+    border-top-width: 0 !important;
 }
 .i-icon-btn.x-btn-disabled.x-btn-default-toolbar-small {
     background: transparent;
