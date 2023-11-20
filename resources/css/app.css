@@ -976,6 +976,7 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
 
 #i-notice-div {
     overflow-y: auto;
+    overflow-x: hidden;
     z-index: 1000000;
     position: absolute;
     display: block;
