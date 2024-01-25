@@ -306,7 +306,7 @@
     border-left-width: 0;
 }
 [data-ref="bodyWrap"] > .x-toolbar[aria-hidden="false"] + .x-toolbar[aria-hidden="true"] + .x-toolbar {
-    border-top-width: 0.1px !important;
+    border-top-width: 1px !important;
 }
 [data-ref="bodyWrap"] > .x-toolbar[aria-hidden="false"] + .x-toolbar[aria-hidden="false"] {
     border-top-width: 0 !important;
@@ -1434,6 +1434,7 @@ font[color][title] {
 }
 [id$="-toolbar--filter"] {
     border-bottom-width: 1px !important;
+    border-bottom-color: #dadada;
     border-right: 0;
     border-left: 0;
 }
@@ -1656,7 +1657,7 @@ font[color][title] {
     display: block;
 }
 .x-field.x-form-type-text[id*="-toolbar--filter--"] {
-    min-height: 18.9px;
+    min-height: 19px;
 }
 [id*=-row-gridChunk-] .x-column-header.i-level-1 > .x-column-header-inner {
     padding-top: 4px;
