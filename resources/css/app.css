@@ -1721,3 +1721,6 @@ span.i-color-box[jump^="cell:"]{
 .x-grid-cell.i-element-number[style*="width: 30px"] .x-grid-cell-inner {
     text-overflow: unset;
 }
+.x-toolbar.x-poppable[aria-hidden="false"] + [id$="-wrapper-body"] {
+    border-top-width: 0;
+}
