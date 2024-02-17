@@ -1670,6 +1670,9 @@ font[color][title] {
 .x-grid-cell.i-overflow:hover .x-grid-cell-inner {
     white-space: pre;
 }
+.x-grid-cell.i-overflow:hover .x-grid-cell-inner {
+    display: inline-block;
+}
 .i-window-header.x-toolbar-default .x-tool-img {
     background-image: url(../images/tools/tool-sprites.png);
 }
