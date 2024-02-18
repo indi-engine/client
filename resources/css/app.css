@@ -1727,3 +1727,7 @@ span.i-color-box[jump^="cell:"]{
 .x-toolbar.x-poppable[aria-hidden="false"] + [id$="-wrapper-body"] {
     border-top-width: 0;
 }
+.x-column-header-over .x-column-header-trigger,
+.x-column-header-open .x-column-header-trigger {
+    width: clamp(13px, 45%, 21px);
+}
