@@ -170,6 +170,9 @@
     background-color: #DDFFE0;
     border: 1px solid #d0d0d0;
     border-bottom-width: 0;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border-top-width: 0 !important;
 }
 .i-field-span.x-item-disabled > * {
     background-color: #afffb6;
@@ -183,7 +186,7 @@
 .i-field-span + .i-field.x-item-disabled .x-form-item-body,
 .i-field-span + .i-field.x-item-disabled .x-form-item-label {
     border-color: #a7a7a7;
-    border-color: #829bf1;
+    border-color: #ccd4fb;
 }
 
 .i-field-span {
@@ -198,10 +201,16 @@
 }
 [role="form"] .i-field.i-field-span .x-form-display-field-body .x-form-display-field {
     color: black;
+    outline: 1px solid #c7d4ff;
 }
 [role="form"] .i-field.i-field-span:first-child .x-form-display-field-body .x-form-display-field {
     font-size: 12px;
 
+}
+[role="form"] .i-field.i-field-span .x-form-display-field-body .x-form-display-field span {
+    padding-top: 1px;
+    padding-bottom: 2px;
+    display: inline-block;
 }
 .x-form-item-label-default.x-form-item-label-top > .x-form-item-label-inner {
     padding-bottom: 3px !important;
@@ -1730,4 +1739,35 @@ span.i-color-box[jump^="cell:"]{
 .x-column-header-over .x-column-header-trigger,
 .x-column-header-open .x-column-header-trigger {
     width: clamp(13px, 45%, 21px);
+}
+[id^="desktopwindow-"] .i-field[style*="position: absolute"] {
+    width: calc(100% - 20px) !important;
+}
+span.i-field-move-handle {
+    display: none;
+}
+.i-field:hover                        span.i-field-move-handle,
+.i-field[style*="position: absolute"] span.i-field-move-handle {
+    display: inline-block;
+}
+.i-field[style*="position: absolute"] span.i-field-move-handle:before,
+.i-field-span:hover                   span.i-field-move-handle:before,
+.i-field:hover                        span.i-field-move-handle:before {
+    cursor: pointer;
+    display: block;
+    content: '☰';
+    margin-left: 4px;
+    width: 10px;
+    height: 10px;
+}
+.i-field-span[style*="position: absolute"] span.i-field-move-handle:before,
+.i-field-span:hover span.i-field-move-handle:before {
+    position: absolute;
+    margin-top: -11px !important;
+}
+.i-reordering {
+    user-select: none;
+}
+.i-reordering .i-field:hover span.i-field-move-handle {
+    display: none;
 }
