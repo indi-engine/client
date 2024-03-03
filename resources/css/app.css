@@ -1771,3 +1771,4 @@ span.i-field-move-handle {
 .i-reordering .i-field:hover span.i-field-move-handle {
     display: none;
 }
+.x-tip {max-width: 400px;}
