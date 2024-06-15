@@ -1781,3 +1781,41 @@ span.i-field-move-handle {
     height: 100%;
     background: white;
 }
+.x-tree-icon {
+    display: none;
+}
+.x-tree-node-text {
+    padding-left: 0;
+}
+.x-tree-lines .x-grid-tree-node-expanded .x-tree-elbow-plus,
+.x-grid .x-grid-tree-node-expanded .x-tree-elbow-plus{
+    background-image: url(../../resources/images/tree/elbow.png)
+}
+
+.x-tree-lines .x-grid-tree-node-expanded .x-tree-elbow-end-plus,
+.x-grid .x-grid-tree-node-expanded .x-tree-elbow-end-plus {
+    background-image: url(../../resources/images/tree/elbow-end.png)
+}
+.x-grid-cell-inner-treecolumn .x-tree-elbow-img:first-child {
+    display: none
+}
+
+.x-tree-lines .x-tree-elbow-plus,
+.x-grid .x-tree-elbow-plus {
+    background-image: url(../../resources/images/tree/elbow.png)
+}
+
+.x-tree-lines .x-tree-elbow-end-plus, .x-grid .x-tree-elbow-end-plus {
+    background-image: url(../../resources/images/tree/elbow-end.png)
+}
+
+.x-grid .x-tree-elbow {
+    background-image: url(../../resources/images/tree/elbow.png);
+}
+
+.x-grid .x-tree-elbow-line {
+    background-image: url(../../resources/images/tree/elbow-line.png);
+}
+.x-grid .x-tree-elbow-end {
+    background-image: url(../../resources/images/tree/elbow-end.png);
+}
