@@ -993,7 +993,6 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
     line-height: normal;
     font-size: 12px;
     max-height: 200px;
-    padding-top: 22px;
 }
 .i-notice, .i-notice-hideall {
     margin: 2px 2px 0 10px;
@@ -1612,6 +1611,7 @@ font[color][title] {
     cursor: pointer;
     display: none;
     position: fixed;
+    margin-bottom: 22px;
 }
 .i-notice + .i-notice + .i-notice-hideall {
     display: block;
