@@ -1765,6 +1765,9 @@ span.i-field-move-handle {
     position: absolute;
     margin-top: -11px !important;
 }
+.i-field-wide:hover span.i-field-move-handle:before {
+    margin-right: -14px;
+}
 .i-reordering {
     user-select: none;
 }
