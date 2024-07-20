@@ -1638,6 +1638,8 @@ font[color][title] {
 }
 [data-value] {
     white-space: pre;
+}
+.thumb-bottom-lines [data-value] {
     display: block;
 }
 [data-value] > .i-cell-img {
