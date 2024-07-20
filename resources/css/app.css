@@ -1638,6 +1638,7 @@ font[color][title] {
 }
 [data-value] {
     white-space: pre;
+    display: block;
 }
 [data-value] > .i-cell-img {
     margin-left: 4px;
