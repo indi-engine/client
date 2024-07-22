@@ -1825,3 +1825,6 @@ span.i-field-move-handle {
 .x-grid .x-tree-elbow-end {
     background-image: url(../../resources/images/tree/elbow-end.png);
 }
+.i-field.i-print-iframe {
+    height: 100%;
+}
