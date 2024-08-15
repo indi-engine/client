@@ -1828,3 +1828,6 @@ span.i-field-move-handle {
 .i-field.i-print-iframe {
     height: 100%;
 }
+.x-grid-cell .i-cell-img {
+    margin-left: 1px;
+}
