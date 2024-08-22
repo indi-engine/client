@@ -1746,7 +1746,8 @@ span.i-color-box[jump^="cell:"]{
 [id^="desktopwindow-"] .i-field[style*="position: absolute"] {
     width: calc(100% - 20px) !important;
 }
-span.i-field-move-handle {
+span.i-field-move-handle,
+span.i-entity-edit-handle {
     display: none;
 }
 .i-field:hover                        span.i-field-move-handle,
@@ -1755,6 +1756,7 @@ span.i-field-move-handle {
 }
 .i-field[style*="position: absolute"] span.i-field-move-handle:before,
 .i-field-span:hover                   span.i-field-move-handle:before,
+.i-field-span-title:hover             span.i-entity-edit-handle:before,
 .i-field:hover                        span.i-field-move-handle:before {
     cursor: pointer;
     display: block;
@@ -1764,6 +1766,7 @@ span.i-field-move-handle {
     height: 10px;
 }
 .i-field-span[style*="position: absolute"] span.i-field-move-handle:before,
+.i-field-span-title:hover span.i-entity-edit-handle:before,
 .i-field-span:hover span.i-field-move-handle:before {
     position: absolute;
     margin-top: -11px !important;
