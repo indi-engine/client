@@ -1837,3 +1837,20 @@ span.i-entity-edit-handle {
 .x-column-header, .x-column-header > [data-ref="innerCt"] {
     overflow: clip;
 }
+.i-window-header.x-toolbar-default .x-tool-img.x-tool-uiedit {
+    background: none;
+}
+.i-window-header.x-toolbar-default .x-tool-img.x-tool-uiedit:before {
+    cursor: pointer;
+    display: none;
+    content: '☰';
+    width: 10px;
+    height: 10px;
+    font-size: 12px;
+    margin-top: 1px;
+    position: relative;
+    left: 3px;
+}
+.i-window-header:hover.x-toolbar-default .x-tool-img.x-tool-uiedit:before {
+    display: block;
+}
