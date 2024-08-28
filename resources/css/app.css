@@ -1854,3 +1854,9 @@ span.i-entity-edit-handle {
 .i-window-header:hover.x-toolbar-default .x-tool-img.x-tool-uiedit:before {
     display: block;
 }
+.i-window-header {
+    min-height: 16px;
+}
+.i-window-header .i-sibling .i-combo-table {
+    margin-top: 1px;
+}
