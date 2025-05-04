@@ -774,6 +774,9 @@ tr[data-boundview] + tr.x-grid-row .i-overflow {
     line-height: 13px;
     /* font-size: 11px; */
 }
+.i-combo-templated .x-boundlist-item {
+    padding: 0;
+}
 .x-boundlist-item-over{
 }
 .x-boundlist-item .i-combo-color-box {width: 14px; height: 9px;}
@@ -1859,4 +1862,14 @@ span.i-entity-edit-handle {
 }
 .i-window-header .i-sibling .i-combo-table {
     margin-top: 1px;
+}
+[id^=messagebox] .x-form-type-radio .x-form-cb-label-default {
+    position: relative;
+    top: -1px;
+}
+[id^=messagebox] .i-field-radio [role=radiogroup] [data-ref=innerCt]{
+    min-height: 20px;
+}
+[id^=messagebox] span[data-title] {
+    border-bottom: 1px dotted;
 }
